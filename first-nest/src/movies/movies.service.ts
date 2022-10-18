@@ -12,6 +12,7 @@ export class MoviesService {
     }
 
     getMovieById(id:number):Movie {
+        console.log(typeof id);
         // return this.movies.find(movie => movie.id === parseInt(id));
         // const movie = this.movies.find(movie => movie.id === +id);      // id 타입을 string -> int 로 바꾸는 법
         const movie = this.movies.find(movie => movie.id === id);
